@@ -68,3 +68,5 @@ environments/local/*
 
 src/environment/*
 !src/environment/.gitkeep
+
+android/credentials_android.json
