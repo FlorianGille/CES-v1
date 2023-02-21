@@ -45,6 +45,7 @@ platform :ios do
 
   desc "Push a new release build to the App Store"
   lane :release do
+    xcversion(version: "13.2.1")
 
     # Authentication
     load_asc_api_key
