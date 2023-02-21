@@ -57,9 +57,9 @@ jobs:
       - name: Build & deploy iOS release
         run: cd ios && bundle exec fastlane ios release
         env:
-          KEY_ID: ${{ secrets.ASC_KEY_ID }}
-          ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
-          PRIVATE_KEY: ${{ secrets.ASC_PRIVATE_KEY }}
+          KEY_ID: ${{ secrets.KEY_ID }}
+          ISSUER_ID: ${{ secrets.ISSUER_ID }}
+          PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
           KEYCHAIN_PATH: "/Users/runner/Library/Keychains/app-signing.keychain-db"
           ACCESS_TOKEN_GITHUB: ${{ secrets.ACCESS_TOKEN_GITHUB }}
           MATCH_PASSWORD: ${{ secrets.MATCH_PASSWORD }}
